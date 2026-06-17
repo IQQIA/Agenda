@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/briefcase-solid-full.svg" type="image/x-icon">
+  </head>
+  <body>
+  <header>
+  </header>
+        <input type="checkbox" id="theme-toggle" hidden>
+    <main>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <div class="top-bar">
+            <div id="top-bar-titles" class="top-bar-title-container">
+                <h2 class="top-bar-title">Agenda</h2>
+            </div>
+            <div id="top-bar-btn" class="top-bar-btn">
+                <div class="top-bar-access-items">
+                    <label for="menu-toggle" class="top-bar-btn">
+                        <i class="top-bar-btn-icon nf nf-fa-bars icon menu-icon"></i>
+                        <i class="top-bar-btn-icon nf nf-fa-xmark icon close-icon"></i>
+                    </label>
+                </div>
+            </div>
+      </div>
+        <div class="main-container">
+            <div id="left-bar" class="left-bar-container">
+                <div class="main-left-bar">
+                    <div class=""></div>
+                    <div class="left-bar-title-container">
+                        
+                        <h2 class="left-bar-title">Agenda</h2>
+                    </div>
+                    <div class="separator"></div>
+                    <a data-view="month" class="selected" class="nav-btn">
+                        <div class="left-bar-items">
+                            <p><i class="nf nf-md-grid icon"></i>
+                                Months
+                            </p></div></a>
+                    <a data-view="week" class="nav-btn">
+                        <div class="left-bar-items">
+                            <p><i class="nf nf-md-view_week_outline icon"></i>
+                                Weeks
+                            </p></div></a>
+                    <a data-view="day" class="nav-btn">
+                        <div class="left-bar-items">
+                            <p><i class="nf nf-md-view_day_outline icon"></i>
+                                Days
+                            </p></div></a>
+                    <div class="separator"></div>
+                    <div class="left-bar-access">
+                      <a class="nav-silent-btn">
+                          <div class="left-bar-items">
+                              <p><i class="nf nf-md-file_upload_outline icon"></i>
+                                  Import
+                              </p></div></a>
+                      <a href="#" class="nav-silent-btn">
+                          <div class="left-bar-items">
+                              <p><i class="nf nf-md-file_download_outline icon"></i>
+                                  Export
+                              </p></div></a>
+                    <div class="separator"></div>
+                      <a href="#" class="add-btn">
+                          <div class="left-bar-acces-items">
+                              <i class="nf nf-cod-add add-icon"></i>
+                          </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" id="calendar-container">
+
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
