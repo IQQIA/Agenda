@@ -1,14 +1,17 @@
-export function renderMonth() {
+export function renderMonth(container) {
 
-    const container = document.getElementById("calendar-container");
+    const grid = document.createElement("div");
+    grid.className = "month-grid";
 
-    container.innerHTML = "";
+    for (let i = 0; i < 42; i++) {
+        const cell = document.createElement("div");
+        cell.className = "month-cell";
 
-    container.innerHTML = `
-        <h1>Août 2025</h1>
+        // placeholder numéro (temporaire)
+        cell.innerHTML = `<span>${i + 1}</span>`;
 
-        <div class="month-grid">
+        grid.appendChild(cell);
+    }
 
-        </div>
-    `;
+    container.appendChild(grid);
 }

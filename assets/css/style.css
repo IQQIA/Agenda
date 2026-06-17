@@ -241,7 +241,7 @@ a {
 .main-left-bar .nav-btn {
     background-color: var(--bg-dark);
     transition: background-color 0.2s ease;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--bg-dark) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--bg) 100%);
 }
 
 .main-left-bar .nav-btn:hover {
@@ -288,6 +288,7 @@ a {
 /* -- main content -- */
 
 .main-content {
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     margin-left: 8px;
@@ -329,7 +330,29 @@ a {
     max-height: 48px;
 }
 
+/* -- month -- */
 
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 2px;
+}
+
+.month-cell {
+    border: 1px solid #333;
+    min-height: 80px;
+    padding: 4px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 12px;
+}
+
+.month-cell:hover {
+    background: #2a2a2a;
+}
 
 /* -- footer -- */
 
